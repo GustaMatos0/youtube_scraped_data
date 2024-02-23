@@ -1,0 +1,10 @@
+## An algorithm to predict youtube views
+This repository contains two notebooks: One for scrapping, the other one for predicting. The goal was to build a model able to predict the views on a youtube video using only public features, such as: channel, description, tags, title, duration and date of publishing.
+
+To get the data yourself, run the youtube_scrap notebook. Once I scrap more data, I intend on uploading it to kaggle. I wanted to use webdriver for this project, as practice. Beacause of that, it takes quite a while to get the full dataset.
+
+The youtube_predict notebook is where I trained models and vectorized the dataset. Be aware that, given the size of the dataset, it is very RAM consuming.
+
+In conclusion, the best performing model was the Random Forest Regressor, with a r² value of ~6.5.
+
+For further details, refer to the prediction notebook.
